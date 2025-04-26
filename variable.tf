@@ -5,7 +5,7 @@ variable "region" {
 }
 variable "instanceType" {
   type = string
-  default = "m2.micro"
+  default = "t2.micro"
 }
 variable "vpc_security_group_ids" {
   type = list(string)
