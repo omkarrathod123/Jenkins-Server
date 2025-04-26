@@ -3,12 +3,12 @@ data "aws_ami" "ubuntuOS" {
 
   filter {
     name   = "name"
-    values = ["ubuntu/images/hvm-ssd/ubuntu-*-*-*"] # Adjust this filter for your specific Ubuntu version
+    values = ["ubuntu/images/hvm-ssd/ubuntu-*-*-*"]
   }
 
   filter {
     name   = "architecture"
-    values = ["x86_64"] # or "arm64" if required
+    values = ["x86_64"]
   }
 
   filter {
@@ -16,5 +16,5 @@ data "aws_ami" "ubuntuOS" {
     values = ["hvm"]
   }
 
-  owners = ["099720109477"] # Canonical's AWS account ID
+  owners = ["099720109477"]
 }

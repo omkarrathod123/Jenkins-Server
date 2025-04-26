@@ -1,6 +1,6 @@
 resource "aws_instance" "jenkins-server" {
   key_name = "Practic"
-  ami = data.aws_ami.ubuntuOS
+  ami = data.aws_ami.ubuntuOS.id
   instance_type = var.instanceType
   vpc_security_group_ids = var.vpc_security_group_ids
   availability_zone = "ap-south-1b"
